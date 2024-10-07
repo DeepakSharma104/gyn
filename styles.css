@@ -1,0 +1,132 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #222;
+    color: #fff;
+    line-height: 1.6;
+}
+
+header {
+    background: #111;
+    color: #00ffcc;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav a {
+    color: #00ffcc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+section {
+    padding: 40px;
+    margin: 20px;
+    background: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background: #111;
+    color: #00ffcc;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    outline: none;
+    box-shadow: 0 0 5px #00ffcc;
+}
+
+button {
+    background: #00ffcc;
+    color: #222;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #ffcc00;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    section {
+        margin: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 20px 0;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    footer {
+        padding: 10px 0;
+    }
+}
